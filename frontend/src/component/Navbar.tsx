@@ -27,7 +27,7 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <div className="backdrop-blur-md bg-gray-900/90 border-b border-gray-700 shadow-lg">
+      <div className="backdrop-blur-md bg-black border-b border-gray-700 shadow-lg">
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <div className="flex items-center gap-4">
             <button
@@ -76,7 +76,7 @@ const Navbar = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="fixed inset-0 bg-gray-900/90 backdrop-blur-sm lg:hidden z-40"
+              className="fixed inset-0 bg-gray-700/90 backdrop-blur-sm lg:hidden z-40"
               onClick={() => setMenuOpen(false)}
             />
             <motion.div
@@ -84,7 +84,7 @@ const Navbar = () => {
               animate={{ x: 0 }}
               exit={{ x: "-100%" }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
-              className="fixed top-0 left-0 h-screen w-72 lg:hidden bg-gray-900 border-r border-gray-700 z-50 backdrop-blur-md flex flex-col"
+              className="fixed top-0 left-0 h-screen w-72 lg:hidden bg-black border-r border-gray-700 z-50 backdrop-blur-md flex flex-col"
             >
               <div className="flex justify-between items-center px-4 py-4 border-b border-gray-700">
                 <Link

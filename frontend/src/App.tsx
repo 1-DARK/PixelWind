@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./component/Navbar";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
@@ -9,10 +10,11 @@ function App() {
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full" />
         </div>
       </div>
-
-      <div className="relative z-50 pt-14">
+      <div className="relative z-40 pt-13 sm:pt-27">
         <Navbar />
-        <Routes></Routes>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
       </div>
     </div>
   );
