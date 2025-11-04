@@ -3,6 +3,7 @@ import { Button } from "../components/ui/button";
 import { Link } from "react-router-dom";
 import { BadgeDemo } from "../component/Badge";
 import { ItemDemo } from "../component/Item";
+import { TabsDemo } from "../component/Tabs";
 
 const HomePage = () => {
   return (
@@ -50,9 +51,10 @@ const HomePage = () => {
           </Button>
         </Link>
       </div>
-      <div className="pl-10 pt-18 flex gap-8">
+      <div className="pl-10 pt-20 flex flex-wrap sm:flex-nowrap gap-15">
         <BadgeDemo />
         <ItemDemo />
+        <TabsDemo />
       </div>
     </div>
   );
