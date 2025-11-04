@@ -21,7 +21,7 @@ const Navbar = () => {
           Build faster with Premium PixelWind Components 💎
         </span>
         <Link to={"/aaa"}>
-          <Button className="bg-white/10 hover:bg-white/20 text-white text-sm px-3 py-1 rounded-md border border-white/20 backdrop-blur-sm transition-all">
+          <Button className="bg-white/10 hover:bg-white/20 cursor-pointer text-white text-sm px-3 py-1 rounded-md border border-white/20 backdrop-blur-sm transition-all">
             Learn more
           </Button>
         </Link>
