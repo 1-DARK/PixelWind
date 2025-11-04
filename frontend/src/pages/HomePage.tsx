@@ -1,4 +1,4 @@
-import { ArrowRight, Pencil } from "lucide-react";
+import { ArrowRight, Pencil, Terminal } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -26,6 +26,25 @@ const HomePage = () => {
         Accessible React components for building high-quality web apps and
         design systems.{" "}
         <span className="text-white">Works with Next.js RSC</span>
+      </div>
+      <div className="pt-10 pl-10 flex gap-4">
+        <Link to="/sa" className="text-white">
+          <Button
+            variant="outline"
+            className="bg-[#369075] hover:text-white   hover:bg-[#3b7c68] border cursor-pointer border-[#1A1F25]  transition-all flex items-center gap-2"
+          >
+            Start Building
+          </Button>
+        </Link>
+        <Link to="/ss">
+          <Button
+            variant="outline"
+            className="bg-[#0D1117] text-[#7EE0C2] border cursor-pointer border-[#1A1F25] hover:bg-[#111821] hover:text-[#9FF4D8] transition-all flex items-center gap-2"
+          >
+            <Terminal className="w-4 h-4" />
+            <span>npm i @wind-ui/react</span>
+          </Button>
+        </Link>
       </div>
     </div>
   );
