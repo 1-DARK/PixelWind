@@ -1,15 +1,19 @@
-import { Button } from "./components/ui/button";
-import { ArrowUpIcon } from "lucide-react";
+import { Route, Routes } from "react-router-dom";
+import Navbar from "./component/Navbar";
 
 function App() {
   return (
-    <div className="flex flex-wrap items-center gap-2 md:flex-row">
-      <Button variant="outline" className="bg-black text-amber-50">
-        Button
-      </Button>
-      <Button variant="outline" size="icon" aria-label="Submit">
-        <ArrowUpIcon />
-      </Button>
+    <div className="min-h-screen relative overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full" />
+        </div>
+      </div>
+
+      <div className="relative z-50 pt-14">
+        <Navbar />
+        <Routes></Routes>
+      </div>
     </div>
   );
 }
