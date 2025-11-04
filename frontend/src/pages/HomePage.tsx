@@ -1,6 +1,8 @@
 import { ArrowRight, Pencil, Terminal } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { Link } from "react-router-dom";
+import { BadgeDemo } from "../component/Badge";
+import { ItemDemo } from "../component/Item";
 
 const HomePage = () => {
   return (
@@ -22,16 +24,18 @@ const HomePage = () => {
         PixelWind is a component system for building products{" "}
         <span className="text-[#7EE0C2]">with speed</span>.
       </div>
+
       <div className="pl-10 pt-4 max-w-3xl text-xl text-gray-500">
         Accessible React components for building high-quality web apps and
         design systems.{" "}
         <span className="text-white">Works with Next.js RSC</span>
       </div>
+
       <div className="pt-10 pl-10 flex gap-4">
         <Link to="/sa" className="text-white">
           <Button
             variant="outline"
-            className="bg-[#369075] hover:text-white   hover:bg-[#3b7c68] border cursor-pointer border-[#1A1F25]  transition-all flex items-center gap-2"
+            className="bg-[#369075] hover:text-white hover:bg-[#3b7c68] border cursor-pointer border-[#1A1F25] transition-all flex items-center gap-2"
           >
             Start Building
           </Button>
@@ -45,6 +49,10 @@ const HomePage = () => {
             <span>npm i @wind-ui/react</span>
           </Button>
         </Link>
+      </div>
+      <div className="pl-10 pt-18 flex gap-8">
+        <BadgeDemo />
+        <ItemDemo />
       </div>
     </div>
   );
